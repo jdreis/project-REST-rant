@@ -6,7 +6,7 @@ app.use('/places', require('./controllers/places'))
 
 // HOME PAGE
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send('REST-rant app');
 });
 
 // 404 PATH
