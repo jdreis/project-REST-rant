@@ -1,18 +1,21 @@
-require('dotenv').config();
-const express = require('express');
+require("dotenv").config();
+const express = require("express");
+const React = require("react");
+const PORT = process.env.PORT;
 const app = express();
 
-app.use('/places', require('./controllers/places'))
+app.set("view engine", "jsx");
+app.engine("jsx", require("express-react-views").createEngine());
+
+app.use("/places", require("./controllers/places"));
 
 // HOME PAGE
-app.get('/', (req, res) => {
-    res.send('REST-rant app');
+app.get("/", (req, res) => {
+  res.render("home");
 });
 
-// 404 PATH
-app.get('*', (req, res) => {
-    res.status(404).send(
-        `<h1 style="text-align:center;margin-top:17vh;">404<br>Page Not Found</h1>`);
+app.get("*", (req, res) => {
+  res.render("error404");
 });
 
-app.listen(process.env.PORT);
+app.listen(PORT);
