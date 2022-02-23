@@ -6,6 +6,13 @@ function home() {
     <Def>
       <main>
         <h1>REST-rant HOME</h1>
+        <div> 
+          <img src="/images/sushi.jpg" alt="Image of Sushi" />
+        </div>
+        <br></br>
+        <a href="/places">
+          <button type="button" class="btn btn-primary">Places</button>
+        </a>
       </main>
     </Def>
   );
