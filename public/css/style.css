@@ -7,3 +7,40 @@ h1 {
   color: cornflowerblue;
 }
 
+nav {
+  background-color: rgb(80, 90, 200);
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 25px;
+  padding-left:30px;
+  padding-right:30px;
+}
+
+nav a {
+  color: white;
+  font-size: 1.5em;
+}
+
+nav a:hover {
+  color: pink;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(110, 120, 220);
+  text-align: center;
+}
+
+main {
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: white;
+}
