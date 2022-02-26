@@ -7,7 +7,7 @@ function home() {
       <main>
         <h1>REST-rant HOME</h1>
         <div> 
-          <img src="/images/sushi.jpg" alt="Image of Sushi" />
+          <img src="/images/sushi.jpg" alt="Image of Sushi" width='800px' />
         </div>
         <br></br>
         <a href="/places">

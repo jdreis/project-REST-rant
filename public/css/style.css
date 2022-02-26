@@ -1,16 +1,9 @@
+* {
+  text-align: center;
+}
+
 h1 {
   text-align: center;
   color: cornflowerblue;
 }
 
-button {
-  text-align: center;
-}
-
-img {
-  display: flex;
-  justify-content: center;
-  height: 375px;
-  width: auto;
-  
-}
