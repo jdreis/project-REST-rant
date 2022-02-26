@@ -5,7 +5,7 @@ function error404() {
   return (
     <Def>
       <main>
-        <img src="/images/404.png" alt="Error 404. Could not find this page." />
+        <img src="/images/404.jpeg" alt="Error 404. Could not find this page." />
       </main>
     </Def>
   );
