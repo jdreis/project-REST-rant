@@ -6,14 +6,14 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 
 // MIDDLEWARE
-app.set('views', __dirname + '/views')
-app.set('view engine', 'jsx')
-app.engine('jsx', require('express-react-views').createEngine())
-app.use(express.static('public'))
-
-// ROUTES
+app.set("views", __dirname + "/views");
+app.set("view engine", "jsx");
+app.engine("jsx", require("express-react-views").createEngine());
+app.use(express.static("public"));
 app.use("/places", require("./controllers/places"));
+app.use(express.urlencoded({ extended: true }));
 
+// CONTROLLERS & ROUTES
 app.get("/", (req, res) => {
   res.render("home");
 });
@@ -23,4 +23,6 @@ app.get("*", (req, res) => {
 });
 
 // LISTEN
-app.listen(PORT);
+app.listen(PORT, () => {
+  console.log(`nomming on port ${PORT}`);
+});
